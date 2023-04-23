@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Install Plasma Linux DE
+GenericName=Calamares Installer
+Exec=install-plasma
+Comment=Calamares — Installer for PLDE Live
+Keywords=calamares;system;install;debian;installer
+Icon=calamares
+Terminal=false
+Categories=Qt;System;
+StartupWMClass=calamares
+StartupNotify=True
