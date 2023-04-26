@@ -24,7 +24,7 @@ Debian 11以上がインストールされたamd64(x86_64)PC．Debian testing (b
 ### ビルド方法
 ビルド手順は以下のとおり．
 ```
-git clone <このレポジトリ> BuildISO
+git clone https://github.com/PlasmaLinux/PLDE_Livebuild.git BuildISO
 cd BuildISO/livebuild
 sudo lb clean
 ./prep.sh
