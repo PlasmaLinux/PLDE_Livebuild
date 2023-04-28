@@ -5,7 +5,6 @@ IMAGE_NAME="PLDE_alpha1_${TIMESTAMP}"
 
 lb config \
 	--apt apt \
-	--apt-recommends false \
 	--architecture amd64 \
 	--distribution testing  \
 	--parent-distribution testing \

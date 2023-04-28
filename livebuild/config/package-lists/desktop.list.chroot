@@ -18,4 +18,7 @@ fcitx5-mozc
 fcitx5-config-qt
 
 policykit-1-gnome
-
+;; automount optical and external drive
+gvfs
+eject
+autofs
