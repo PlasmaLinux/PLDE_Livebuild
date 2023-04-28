@@ -6,17 +6,14 @@ LB_CONFIGURATION_VERSION="20230131"
 # Set package manager
 LB_APT="apt"
 
-# Set apt/aptitude/debootstrap ftp proxy
-LB_APT_FTP_PROXY=""
-
-# Set apt/aptitude/debootstrap http proxy
+# Set proxy for HTTP connections
 LB_APT_HTTP_PROXY=""
 
 # Set apt/aptitude pipeline depth
 LB_APT_PIPELINE=""
 
 # Set apt/aptitude recommends
-LB_APT_RECOMMENDS="false"
+LB_APT_RECOMMENDS="true"
 
 # Set apt/aptitude security
 LB_APT_SECURE="true"
@@ -58,7 +55,7 @@ LB_MODE="debian"
 LB_SYSTEM="live"
 
 # Set base name of the image
-LB_IMAGE_NAME="PLDE_alpha1_20230423"
+LB_IMAGE_NAME="PLDE_alpha1_20230428"
 
 # Set options to use with apt
 APT_OPTIONS="--yes -o Acquire::Retries=5"
