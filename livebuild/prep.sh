@@ -6,6 +6,7 @@ IMAGE_NAME="PLDE_alpha1_${TIMESTAMP}"
 lb config \
 	--apt apt \
 	--architecture amd64 \
+	--apt-recommends false \
 	--distribution testing  \
 	--parent-distribution testing \
 	--parent-debian-installer-distribution testing \
@@ -14,5 +15,6 @@ lb config \
 	--mirror-chroot "http://ftp.riken.go.jp/Linux/debian/debian" \
 	--mirror-binary "http://ftp.riken.go.jp/Linux/debian/debian" \
 	--bootappend-live "boot=live components locales=ja_JP.UTF-8 debug=1" \
-	--image-name ${IMAGE_NAME}
+	--binary-image iso \
+	--image-name ${IMAGE_NAME} 
 

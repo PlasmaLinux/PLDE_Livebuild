@@ -10,16 +10,16 @@ LB_DISTRIBUTION="testing"
 LB_PARENT_DISTRIBUTION="testing"
 
 # Select distribution to use in the chroot
-LB_DISTRIBUTION_CHROOT="bookworm"
+LB_DISTRIBUTION_CHROOT="testing"
 
 # Select parent distribution to use in the chroot
-LB_PARENT_DISTRIBUTION_CHROOT="bookworm"
+LB_PARENT_DISTRIBUTION_CHROOT="testing"
 
 # Select distribution to use in the final image
-LB_DISTRIBUTION_BINARY="bookworm"
+LB_DISTRIBUTION_BINARY="testing"
 
 # Select parent distribution to use in the final image
-LB_PARENT_DISTRIBUTION_BINARY="bookworm"
+LB_PARENT_DISTRIBUTION_BINARY="testing"
 
 # Select parent distribution for debian-installer to use
 LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION="testing"
