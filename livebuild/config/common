@@ -13,7 +13,7 @@ LB_APT_HTTP_PROXY=""
 LB_APT_PIPELINE=""
 
 # Set apt/aptitude recommends
-LB_APT_RECOMMENDS="true"
+LB_APT_RECOMMENDS="false"
 
 # Set apt/aptitude security
 LB_APT_SECURE="true"
@@ -55,7 +55,7 @@ LB_MODE="debian"
 LB_SYSTEM="live"
 
 # Set base name of the image
-LB_IMAGE_NAME="PLDE_alpha1_20230428"
+LB_IMAGE_NAME="PLDE_alpha1_20230429"
 
 # Set options to use with apt
 APT_OPTIONS="--yes -o Acquire::Retries=5"
