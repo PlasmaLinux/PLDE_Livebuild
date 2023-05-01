@@ -19,8 +19,8 @@ buildconfig:
 	--mirror-bootstrap "http://ftp.riken.go.jp/Linux/debian/debian" \
 	--mirror-chroot "http://ftp.riken.go.jp/Linux/debian/debian" \
 	--mirror-binary "http://ftp.riken.go.jp/Linux/debian/debian" \
-	--bootappend-live "boot=live components locales=ja_JP.UTF-8 debug=1" \
-	--binary-image iso \
+	--bootappend-live "boot=live components username=plasma locales=ja_JP.UTF-8 debug=1" \
+	--binary-image iso-hybrid \
 	--image-name ${IMAGE_NAME}
 
 	cp -pr ${ROOTFS_RESOURCES}/* ${CHROOT_AFTER_DIR}
