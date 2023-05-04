@@ -1,6 +1,7 @@
 IMAGE_NAME="PLDE_${VERSION}_`date +%Y%m%d`"
 CHROOT_AFTER_DIR="config/includes.chroot_after_packages"
 ROOTFS_RESOURCES="resources/rootfs"
+THEMES_RESOURCES="resources/themes"
 PACKAGE_LISTS="config/package-lists"
 PACKAGE_LISTS_RESOURCES="resources/package-lists"
 
@@ -25,6 +26,9 @@ buildconfig:
 
 	cp -pr ${ROOTFS_RESOURCES}/* ${CHROOT_AFTER_DIR}
 	cp -pr ${PACKAGE_LISTS_RESOURCES}/* ${PACKAGE_LISTS}
+	cp -pr ${THEMES_RESOURCES}/themes ${CHROOT_AFTER_DIR}/usr/share/ 
+	cp -pr ${THEMES_RESOURCES}/icons ${CHROOT_AFTER_DIR}/usr/share/ 
+	cp -pr ${THEMES_RESOURCES}/backgrounds ${CHROOT_AFTER_DIR}/usr/share/ 
 
 # 2. squashfs用にdebootstrapにてベースパッケージを取得
 bootstrap: buildconfig
