@@ -2,6 +2,10 @@ locales
 task-japanese-desktop
 task-xfce-desktop
 xfce4-terminal
+xfce4-wavelan-plugin
+
+wpagui
+
 firefox-esr
 firefox-esr-l10n-ja
 
