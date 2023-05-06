@@ -35,7 +35,7 @@ make build
 LiveImageのユーザ名は`user`，パスワードは`live`です．
 
 ### カスタム方法
-- [HOW TO CUSTOM](./HOW_TO_CUTSOM.md)
+- [HOW TO CUSTOM](HOW_TO_CUSTOM.md)
 
 ------
 ## TODO
