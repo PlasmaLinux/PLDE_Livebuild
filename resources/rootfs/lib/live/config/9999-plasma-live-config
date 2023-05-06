@@ -46,14 +46,12 @@ Config ()
 	sleep 2
 	if [ -d /home/${LIVE_USERNAME}/ ]
 	then
-		if [ -d /home/${LIVE_USERNAME}/Desktop ]
+		if [ ! -d /home/${LIVE_USERNAME}/Desktop ]
 		then
-			cp /usr/share/plasmalinux/install-plasma.desktop /home/${LIVE_USERNAME}/Desktop/
-		else
 			echo "[INFO] not found: /home/${LIVE_USERNAME}/Desktop"
 			sudo -u ${LIVE_USERNAME} mkdir /home/${LIVE_USERNAME}/Desktop
-			cp /usr/share/plasmalinux/install-plasma.desktop /home/${LIVE_USERNAME}/Desktop/
 		fi	
+		cp /usr/share/plasmalinux/install-plasma.desktop /home/${LIVE_USERNAME}/Desktop/
 	else
 		echo "not found: /home/${LIVE_USERNAME}"
 	fi
@@ -65,3 +63,4 @@ Config ()
 Cmdline
 Init
 Config
+

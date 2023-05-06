@@ -2,8 +2,11 @@ locales
 task-japanese-desktop
 task-xfce-desktop
 xfce4-terminal
+
 firefox-esr
 firefox-esr-l10n-ja
+
+plank
 
 thunderbird
 thunderbird-l10n-ja
@@ -27,4 +30,6 @@ pulseaudio
 pavucontrol
 
 wpasupplicant
+network-manager-gnome
+wpagui
 
