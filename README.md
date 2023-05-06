@@ -34,8 +34,12 @@ make build
 `PLDE-alpha1_YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
 LiveImageのユーザ名は`user`，パスワードは`live`です．
 
+### カスタム方法
+- [HOW TO CUSTOM](./HOW_TO_CUTSOM.md)
+
 ------
 ## TODO
 - [x] Calamares インストーラの導入
 - [x] Makefileを使ったビルドシステム
-- [ ] PlasmaLinuxの壁紙・テーマ・アイコンをLiveイメージに適用する
+- [x] PlasmaLinuxのテーマ・アイコンをLiveイメージに適用する
+- [ ] デフォルトの壁紙を変更する
