@@ -1,0 +1,11 @@
+#!/bin/bash
+
+TESTING_FILE="/etc/apt/sources.list.testing"
+LIST_FILE="/etc/apt/sources.list"
+BKUP_FILE="/etc/apt/sources.list-bkup"$$
+
+if [ $TESTING_FILE -ot $LIST_FILE ]
+then
+    cp -fp $LIST_FILE $BKUP_FILE
+    cp -fp $TESTING_FILE $LIST_FILE
+fi
