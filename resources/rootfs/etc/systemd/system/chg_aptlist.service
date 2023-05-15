@@ -1,0 +1,9 @@
+[Unit]
+Description=cheng apt sources.list
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/chg_aptlist
+
+[Install]
+WantedBy=graphical.target
