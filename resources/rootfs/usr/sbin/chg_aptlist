@@ -2,9 +2,12 @@
 
 TESTING_FILE="/etc/apt/sources.list.testing"
 LIST_FILE="/etc/apt/sources.list"
-BKUP_FILE="/etc/apt/sources.list-bkup"$$
+BKUP_FILE="/etc/apt/sources.list-"`date "+%Y%m%d_%H%M%S"`
 
-if [ $TESTING_FILE -ot $LIST_FILE ]
+diff -q $TESTING_FILE $LIST_FILE
+RET=`echo $?`
+
+if [ $RET != 0 ]
 then
     cp -fp $LIST_FILE $BKUP_FILE
     cp -fp $TESTING_FILE $LIST_FILE
