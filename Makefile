@@ -5,6 +5,8 @@ ROOTFS_RESOURCES="resources/rootfs"
 THEMES_RESOURCES="resources/themes"
 PACKAGE_LISTS="config/package-lists"
 PACKAGE_LISTS_RESOURCES="resources/package-lists"
+BOOTLOADERS_DIR="config/bootloaders"
+BOOTLOADERS_RESOURCES="resources/bootloaders"
 
 include VERSION
 
@@ -31,6 +33,7 @@ buildconfig:
 	cp -pr ${THEMES_RESOURCES}/icons ${CHROOT_AFTER_DIR}/usr/share/ 
 	cp -pr ${THEMES_RESOURCES}/backgrounds ${CHROOT_AFTER_DIR}/usr/share/ 
 	cp -pr ${RESOURCES}/user_config/* ${CHROOT_AFTER_DIR}/etc/skel/.config/ 
+	cp -pr ${BOOTLOADERS_RESOURCES}/* ${BOOTLOADERS_DIR}
 
 # 2. squashfs用にdebootstrapにてベースパッケージを取得
 bootstrap: buildconfig
