@@ -1,4 +1,4 @@
-IMAGE_NAME="PLDE_${VERSION}_`date +%Y%m%d`"
+IMAGE_NAME="PLDE_${ISO_VERSION}_`date +%Y%m%d`"
 CHROOT_AFTER_DIR="config/includes.chroot_after_packages"
 RESOURCES=resources
 ROOTFS_RESOURCES="resources/rootfs"
@@ -34,6 +34,8 @@ buildconfig:
 	cp -pr ${THEMES_RESOURCES}/backgrounds ${CHROOT_AFTER_DIR}/usr/share/ 
 	cp -pr ${RESOURCES}/user_config/* ${CHROOT_AFTER_DIR}/etc/skel/.config/ 
 	cp -pr ${BOOTLOADERS_RESOURCES}/* ${BOOTLOADERS_DIR}
+
+	bash ./replace_version_description.sh
 
 # 2. squashfs用にdebootstrapにてベースパッケージを取得
 bootstrap: buildconfig
