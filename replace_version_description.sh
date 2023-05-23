@@ -1,5 +1,13 @@
 #!/bin/bash
-#Written by aruelu, 2023.05
+#
+# replace_version_description.sh 20230523
+# 
+# desc: 
+#   os-release, grub, live-bootの情報をPLDE用に書き変えるスクリプト
+#
+# Written by aruelu, 2023/05/22
+# Modify by rkarsnk, 2023/05/23
+
 
 . ./VERSION
 
@@ -26,4 +34,8 @@ sed -i -e "s#@PRETTY_NAME@#${DISTRO_NAME} ${DISTRO_VERSION} ${DISTRO_CODENAME}#g
 
 sed -i -e "s#@PRETTY_NAME@#${DISTRO_NAME} ${DISTRO_VERSION} ${DISTRO_CODENAME}#g" \
     ${BOOTLOADERS_DIR}/grub-pc/live-theme/theme.txt
+
+# Add by rkarsnk, 2023/05/23
+sed -i -e "s#@PRETTY_NAME@#${DISTRO_NAME} ${DISTRO_VERSION} ${DISTRO_CODENAME}#g" \
+    ${CHROOT_AFTER_DIR}/etc/grub.d/10_linux
 

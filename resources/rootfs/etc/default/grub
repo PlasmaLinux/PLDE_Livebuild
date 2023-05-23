@@ -8,6 +8,7 @@ GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="@NAME@"
 GRUB_CMDLINE_LINUX_DEFAULT="quiet resume=UUID=3870d7b6-f8f5-475a-a135-d5b6c3feaefb"
 GRUB_CMDLINE_LINUX=""
+GRUB_BACKGROUND="/usr/share/backgrounds/plasma_dark.png"
 
 # If your computer has multiple operating systems installed, then you
 # probably want to run os-prober. However, if your computer is a host
