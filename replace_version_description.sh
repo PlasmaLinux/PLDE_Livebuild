@@ -15,7 +15,7 @@ sed -i -e "s#@PRETTY_NAME@#${PRETTY_NAME}#g" \
 sed -i -e "s#@PRETTY_NAME@#${PRETTY_NAME}#g" ${CHROOT_AFTER_DIR}/etc/issue
 sed -i -e "s#@PRETTY_NAME@#${PRETTY_NAME}#g" ${CHROOT_AFTER_DIR}/etc/issue.net
 
-sed -i -e "s#@PRETTY_NAME@#${PRETTY_NAME}#g" ${CHROOT_AFTER_DIR}/etc/default/grub
+sed -i -e "s#NAME@#${NAME}#g" ${CHROOT_AFTER_DIR}/etc/default/grub
 
 sed -i -e "s#@PRETTY_NAME@#${PRETTY_NAME}#g" ${BOOTLOADERS_DIR}/syslinux_common/splash.svg
 
