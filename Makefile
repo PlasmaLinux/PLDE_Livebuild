@@ -35,7 +35,7 @@ buildconfig:
 	cp -pr ${RESOURCES}/user_config/* ${CHROOT_AFTER_DIR}/etc/skel/.config/ 
 	cp -pr ${BOOTLOADERS_RESOURCES}/* ${BOOTLOADERS_DIR}
 
-	bash ./chg_ver.sh
+	bash ./replace_version_description.sh
 
 # 2. squashfs用にdebootstrapにてベースパッケージを取得
 bootstrap: buildconfig
