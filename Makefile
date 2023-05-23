@@ -1,4 +1,4 @@
-IMAGE_NAME="PLDE_${VERSION}_`date +%Y%m%d`"
+IMAGE_NAME="PLDE_${ISO_VERSION}_`date +%Y%m%d`"
 CHROOT_AFTER_DIR="config/includes.chroot_after_packages"
 RESOURCES=resources
 ROOTFS_RESOURCES="resources/rootfs"
