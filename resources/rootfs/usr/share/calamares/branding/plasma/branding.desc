@@ -7,22 +7,22 @@ windowSize: 800px,520px
 windowPlacement: center
 
 strings:
-    productName:         Plasma Linux
-    shortProductName:    Plasma Linux
-    version:             23.04.1
-    shortVersion:        23.04
-    versionedName:       Plasma Linux 23.04.1
-    shortVersionedName:  Plasma Linux 23.04
+    productName:         @NAME@
+    shortProductName:    @NAME@
+    version:             @VERSION_ID@
+    shortVersion:        @VERSION_ID@
+    versionedName:       @PRETTY_NAME@
+    shortVersionedName:  @PRETTY_NAME@
     bootloaderEntryName: Linux
-    productUrl:          https://debian.org
-    supportUrl:          https://www.debian.org/support
-    knownIssuesUrl:      https://bugs.debian.org
-    releaseNotesUrl:     https://www.debian.org/releases/bookworm/releasenotes
-    donateUrl:           https://www.debian.org
+    productUrl:          https://plasmalinux.github.io/
+    supportUrl:          https://plasmalinux.github.io/
+    knownIssuesUrl:      https://plasmalinux.github.io/
+    releaseNotesUrl:     https://plasmalinux.github.io/
+    donateUrl:           https://plasmalinux.github.io/
 
 images:
-    productLogo:         "debian-logo.png"
-    productIcon:         "debian-logo.png"
+    productLogo:         "PlasmaLinux Icon.png"
+    productIcon:         "PlasmaLinux Icon.png"
     productWelcome:      "welcome.png"
     # productWallpaper:  "wallpaper.png"
 
