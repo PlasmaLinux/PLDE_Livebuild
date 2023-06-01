@@ -30,6 +30,6 @@ pulseaudio
 pavucontrol
 
 wpasupplicant
+network-manager
 network-manager-gnome
-wpagui
 
