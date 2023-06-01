@@ -15,7 +15,8 @@ buildconfig:
 	lb config \
 	--apt apt \
 	--architecture amd64 \
-	--apt-recommends false \
+	--apt-recommends true \
+	--firmware-chroot false \
 	--distribution testing  \
 	--parent-distribution testing \
 	--parent-debian-installer-distribution testing \

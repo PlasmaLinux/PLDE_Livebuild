@@ -1,0 +1,30 @@
+# CPU microcode
+amd64-microcode
+intel-microcode
+
+# Graphic Firmware
+firmware-ast
+firmware-amd-graphics
+firmware-nvidia-tesla-gsp
+
+# Wifi
+firmware-ath9k-htc
+firmware-atheros
+firmware-bnx2
+firmware-bnx2x
+firmware-brcm80211
+firmware-iwlwifi
+firmware-linux-free
+firmware-misc-nonfree
+
+# Bluetooth
+bluez-firmware
+
+# Sound
+firmware-intel-sound
+firmware-sof-signed
+
+# Network
+firmware-myricom
+firmware-realtek
+
