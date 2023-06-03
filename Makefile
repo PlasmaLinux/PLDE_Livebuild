@@ -15,7 +15,7 @@ buildconfig:
 	lb config \
 	--apt apt \
 	--architecture amd64 \
-	--apt-recommends true \
+	--apt-recommends false \
 	--firmware-chroot false \
 	--distribution testing  \
 	--parent-distribution testing \
