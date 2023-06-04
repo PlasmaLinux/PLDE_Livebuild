@@ -1,6 +1,6 @@
 # PLDE_Livebuild
 
-## ⚠️PLDEは二度と更新されません!
+## ⚠️PLDEは更新されません!
 PLDEの開発をするのは私たちは非常に疲れました。
 今後はDebian GNU/Linux又はopen.yellow.osを使ってください。
 
