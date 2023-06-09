@@ -3,7 +3,7 @@ CHROOT_AFTER_DIR="config/includes.chroot_after_packages"
 RESOURCES=resources
 ROOTFS_RESOURCES="resources/rootfs"
 THEMES_RESOURCES="resources/themes"
-PACKAGES="config/packages.chroot"
+PACKAGES="config/packages"
 PACKAGE_LISTS="config/package-lists"
 PACKAGE_LISTS_RESOURCES="resources/package-lists"
 BOOTLOADERS_DIR="config/bootloaders"
@@ -53,6 +53,9 @@ chroot: bootstrap
 # 4. ISO Imageを生成する
 iso: chroot
 	sudo lb binary
+
+build: buildconfig
+	sudo lb build
 
 clean:
 	sudo lb clean
