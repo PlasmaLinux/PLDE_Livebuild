@@ -33,28 +33,14 @@ Init ()
 
 Config ()
 {
-	if [ -d /etc/calamares ]
-	then
-		rm -rf /etc/calamares
-	fi
 
-	if [ -f /usr/bin/install-debian ]
-	then
-		rm /usr/bin/install-debian
-	fi
 
-	sleep 2
-	if [ -d /home/${LIVE_USERNAME}/ ]
+	if [ ! -d /home/${LIVE_USERNAME}/Desktop ]
 	then
-		if [ ! -d /home/${LIVE_USERNAME}/Desktop ]
-		then
-			echo "[INFO] not found: /home/${LIVE_USERNAME}/Desktop"
-			sudo -u ${LIVE_USERNAME} mkdir /home/${LIVE_USERNAME}/Desktop
-		fi	
-		cp /usr/share/plasmalinux/install-plasma.desktop /home/${LIVE_USERNAME}/Desktop/
-	else
-		echo "not found: /home/${LIVE_USERNAME}"
-	fi
+		echo "[INFO] not found: /home/${LIVE_USERNAME}/Desktop"
+		sudo -u ${LIVE_USERNAME} mkdir /home/${LIVE_USERNAME}/Desktop
+	fi	
+	cp /usr/share/applications/install-plasma.desktop /home/${LIVE_USERNAME}/Desktop/
 
 	# Creating state file
 	touch /var/lib/live/config/plasma-live-config

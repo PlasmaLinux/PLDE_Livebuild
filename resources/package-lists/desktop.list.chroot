@@ -33,3 +33,6 @@ wpasupplicant
 network-manager
 network-manager-gnome
 
+plymouth
+plymouth-label
+

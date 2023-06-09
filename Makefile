@@ -3,6 +3,7 @@ CHROOT_AFTER_DIR="config/includes.chroot_after_packages"
 RESOURCES=resources
 ROOTFS_RESOURCES="resources/rootfs"
 THEMES_RESOURCES="resources/themes"
+PACKAGES="config/packages.chroot"
 PACKAGE_LISTS="config/package-lists"
 PACKAGE_LISTS_RESOURCES="resources/package-lists"
 BOOTLOADERS_DIR="config/bootloaders"
@@ -24,7 +25,7 @@ buildconfig:
 	--mirror-bootstrap "http://ftp.riken.go.jp/Linux/debian/debian" \
 	--mirror-chroot "http://ftp.riken.go.jp/Linux/debian/debian" \
 	--mirror-binary "http://ftp.riken.go.jp/Linux/debian/debian" \
-	--bootappend-live "boot=live components username=plasma locales=ja_JP.UTF-8 debug=1" \
+	--bootappend-live "boot=live splash components username=plasma locales=ja_JP.UTF-8 debug=1" \
 	--binary-image iso-hybrid \
 	--image-name ${IMAGE_NAME}
 
@@ -35,8 +36,10 @@ buildconfig:
 	cp -pr ${THEMES_RESOURCES}/backgrounds ${CHROOT_AFTER_DIR}/usr/share/ 
 	cp -pr ${RESOURCES}/user_config/* ${CHROOT_AFTER_DIR}/etc/skel/.config/ 
 	cp -pr ${BOOTLOADERS_RESOURCES}/* ${BOOTLOADERS_DIR}
+	cp -pr ${RESOURCES}/dpkg/* ${PACKAGES} 
 
 	bash ./replace_version_description.sh
+	
 
 # 2. squashfs用にdebootstrapにてベースパッケージを取得
 bootstrap: buildconfig
@@ -45,15 +48,11 @@ bootstrap: buildconfig
 # 3. squashfs環境に指定したパッケージとファイルを導入する
 chroot: bootstrap
 	sudo lb chroot
+	cp ${PACKAGES}/plymouth-theme-plde
 
-# 4. LiveImageを生成する
-binary: chroot
+# 4. ISO Imageを生成する
+iso: chroot
 	sudo lb binary
-
-# 2.3.4のステップを一気に実行
-build: buildconfig
-	sudo lb build
-
 
 clean:
 	sudo lb clean

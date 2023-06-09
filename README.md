@@ -34,10 +34,10 @@ Debian 11以上がインストールされたamd64(x86_64)PC．Debian testing (b
 ```
 git clone --recursive https://github.com/PlasmaLinux/PLDE_Livebuild.git BuildISO
 cd BuildISO/
-make build
+make iso
 ```
 `PLDE-alpha1_YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
-LiveImageのユーザ名は`user`，パスワードは`live`です．
+LiveImageのユーザ名は`plasma`，パスワードは`live`です．
 
 ### カスタム方法
 - [HOW TO CUSTOM](HOW_TO_CUSTOM.md)

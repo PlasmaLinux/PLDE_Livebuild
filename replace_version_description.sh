@@ -40,8 +40,3 @@ sed -i -e "s#@PRETTY_NAME@#${DISTRO_NAME} ${DISTRO_VERSION} ${DISTRO_CODENAME}#g
 sed -i -e "s#@PRETTY_NAME@#${DISTRO_NAME} ${DISTRO_VERSION} ${DISTRO_CODENAME}#g" \
     ${CHROOT_AFTER_DIR}/etc/grub.d/10_linux
 
-# Add by aruelu, 2023/05/24
-sed -i -e "s#@PRETTY_NAME@#${DISTRO_NAME} ${DISTRO_VERSION} ${DISTRO_CODENAME}#g" \
-    -e "s#@NAME@#${DISTRO_NAME}#g" \
-    -e "s#@VERSION_ID@#${DISTRO_VERSION}#g" \
-    ${CHROOT_AFTER_DIR}/usr/share/calamares/branding/plasma/branding.desc
