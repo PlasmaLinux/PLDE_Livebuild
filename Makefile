@@ -48,7 +48,6 @@ bootstrap: buildconfig
 # 3. squashfs環境に指定したパッケージとファイルを導入する
 chroot: bootstrap
 	sudo lb chroot
-	cp ${PACKAGES}/plymouth-theme-plde
 
 # 4. ISO Imageを生成する
 iso: chroot
