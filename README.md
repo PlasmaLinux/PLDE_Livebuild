@@ -1,9 +1,5 @@
 # PLDE_Livebuild
 
-## ⚠️PLDEは更新されません!
-PLDEの開発をするのは私たちは非常に疲れました。
-今後はDebian GNU/Linux又はopen.yellow.osを使ってください。
-
 ## 概要
 Plasma Linux Debian Edition 開発用レポジトリ
 
