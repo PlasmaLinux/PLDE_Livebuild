@@ -22,9 +22,9 @@ buildconfig:
 	--parent-distribution testing \
 	--parent-debian-installer-distribution testing \
 	--archive-areas "main contrib non-free non-free-firmware" \
-	--mirror-bootstrap "http://ftp.riken.go.jp/Linux/debian/debian" \
-	--mirror-chroot "http://ftp.riken.go.jp/Linux/debian/debian" \
-	--mirror-binary "http://ftp.riken.go.jp/Linux/debian/debian" \
+	--mirror-bootstrap "http://deb.debian.org/debian" \
+	--mirror-chroot "http://deb.debian.org/debian" \
+	--mirror-binary "http://deb.debian.org/debian" \
 	--bootappend-live "boot=live splash components username=plasma locales=ja_JP.UTF-8 debug=1" \
 	--binary-image iso-hybrid \
 	--image-name ${IMAGE_NAME}
