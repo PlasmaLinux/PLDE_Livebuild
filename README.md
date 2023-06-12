@@ -13,8 +13,6 @@ Plasma Linux Debian Edition 開発用レポジトリ
 なお，このリポジトリでビルドしたISOは，仮想マシン(UEFI,64bit，SecureBoot無効)の環境でのみでしか動作確認できておりません．
 実機や本番環境で利用する場合は，事前に大事なデータのバックアップを取るなどの対策をとってください．
 
-## ディレクトリツリー
-
 ## ISOのビルド方法
 ### 必要な環境
 Debian 11以上がインストールされたamd64(x86_64)PC．Debian testing (bookworm) を推奨
@@ -34,9 +32,6 @@ make iso
 ```
 `PLDE-alpha1_YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
 LiveImageのユーザ名は`plasma`，パスワードは`live`です．
-
-### カスタム方法
-- [HOW TO CUSTOM](HOW_TO_CUSTOM.md)
 
 ------
 ## TODO
