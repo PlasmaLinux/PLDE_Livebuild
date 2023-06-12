@@ -19,6 +19,7 @@ fonts-vlgothic
 fcitx5
 fcitx5-mozc
 fcitx5-config-qt
+im-config
 
 policykit-1-gnome
 
