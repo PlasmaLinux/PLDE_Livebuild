@@ -30,7 +30,7 @@ git clone --recursive https://github.com/PlasmaLinux/PLDE_Livebuild.git BuildISO
 cd BuildISO/
 make iso
 ```
-`PLDE-alpha1_YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
+`PLDE-releasename_YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
 LiveImageのユーザ名は`plasma`，パスワードは`live`です．
 
 ------
@@ -38,4 +38,4 @@ LiveImageのユーザ名は`plasma`，パスワードは`live`です．
 - [x] Calamares インストーラの導入
 - [x] Makefileを使ったビルドシステム
 - [x] PlasmaLinuxのテーマ・アイコンをLiveイメージに適用する
-- [ ] デフォルトの壁紙を変更する
+- [x] デフォルトの壁紙を変更する
