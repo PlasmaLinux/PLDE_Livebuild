@@ -4,7 +4,18 @@ DEFAULT_BACKGROUNDS=/usr/share/backgrounds/plasma_dark.png
 RUNFILE_DIR=~/.config/plasmalinux
 RUNFILE="$RUNFILE_DIR"/.plasmalinux_backgrounds.run
 
-sleep 1
+#wait for xfdesktop to start
+if [ `echo $USER` = "plasma" ];then
+    TIME=5
+else
+    TIME=1
+fi
+
+sleep $TIME
+until ps -C xfdesktop > /dev/null; do
+    sleep $TIME
+done
+
 
 # exit if the script has been run before
 [[ -f $RUNFILE ]] && exit 0
