@@ -28,6 +28,7 @@ buildconfig:
 
 	cp -pr ${ROOTFS_RESOURCES}/* ${CHROOT_AFTER_DIR}
 	cp -pr ${PACKAGE_LISTS_RESOURCES}/* ${PACKAGE_LISTS}
+	mkdir -p ${CHROOT_AFTER_DIR}/usr/share/  
 	cp -pr ${THEMES_RESOURCES}/themes ${CHROOT_AFTER_DIR}/usr/share/ 
 	cp -pr ${THEMES_RESOURCES}/icons ${CHROOT_AFTER_DIR}/usr/share/ 
 	cp -pr ${RESOURCES}/user_config/* ${CHROOT_AFTER_DIR}/etc/skel/.config/ 
