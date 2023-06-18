@@ -1,7 +1,7 @@
 calamares
 calamares-extensions
 calamares-extensions-data
-#calamares-settings-debian
+calamares-settings-debian
 squashfs-tools
 user-setup
 dosfstools
