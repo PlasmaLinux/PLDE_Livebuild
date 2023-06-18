@@ -1,2 +1,45 @@
-# PLDE_LiveBuild
+# PLDE_Livebuild
+## 注意
+- 著作権放棄されていないファイルを削除
+- 削除にともない，ビルドは正常に実行できない
+- ビルドする場合はMakefileを読み，必要なファイルを用意すること．
 
+## 概要
+Plasma Linux Debian Edition 開発用レポジトリ
+
+**特徴**
+- Debian testingベース
+- Linux kernel 6.1.0-X
+- Xfce 4.18
+- Calamares 3.2.61
+
+## 注意
+なお，このリポジトリでビルドしたISOは，仮想マシン(UEFI,64bit，SecureBoot無効)の環境でのみでしか動作確認できておりません．
+実機や本番環境で利用する場合は，事前に大事なデータのバックアップを取るなどの対策をとってください．
+
+## ISOのビルド方法
+### 必要な環境
+Debian 11以上がインストールされたamd64(x86_64)PC．Debian testing (bookworm) を推奨
+
+### 事前に必要なソフトウェア
+以下のパッケージを事前にインストール
+- git
+- make
+- live-build
+
+### ビルド方法
+ビルド手順は以下のとおり．
+```
+git clone --recursive https://github.com/PlasmaLinux/PLDE_Livebuild.git BuildISO
+cd BuildISO/
+make iso
+```
+`PLDE-releasename_YYYYMMDD-amd64.hybrid.iso`というファイルが生成されます．
+LiveImageのユーザ名は`plasma`，パスワードは`live`です．
+
+------
+## TODO
+- [x] Calamares インストーラの導入
+- [x] Makefileを使ったビルドシステム
+- [x] PlasmaLinuxのテーマ・アイコンをLiveイメージに適用する
+- [x] デフォルトの壁紙を変更する

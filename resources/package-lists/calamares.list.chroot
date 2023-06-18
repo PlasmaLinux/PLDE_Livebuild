@@ -1,0 +1,8 @@
+calamares
+calamares-extensions
+calamares-extensions-data
+#calamares-settings-debian
+squashfs-tools
+user-setup
+dosfstools
+grub-efi-amd64-bin
